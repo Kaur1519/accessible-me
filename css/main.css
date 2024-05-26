@@ -18,6 +18,7 @@ h6 {
   max-width: 80%;
   margin: 0 auto;
   padding: 0 1rem;
+  padding-top: 0.1rem;
   background-color: white;
 }
 
@@ -69,7 +70,48 @@ form button {
   padding: 1rem;
   text-transform: uppercase;
 }
-
 .site-footer {
   padding: 2rem 0;
+}
+/* styling all links when they are in focus */
+a:focus{
+  outline: 3.5px solid black;
+  outline-offset: 2px;
+}
+
+/* styling the skip-links */
+.skip-links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.skip-links a{
+  text-decoration: none;
+  background-color: gray;
+  color: white;
+  padding: 0.8rem;
+  font-size: 1.50rem;
+  font-weight: 500;
+  position: absolute;
+  top: -3.5rem;
+}
+.skip-links li{
+  margin-top: 1.8rem;
+}
+.skip-links a:focus{
+  top:0;
+}
+
+/* styling the back to top link */
+.site-footer a{
+  text-decoration: none;
+  background-color: grey;
+  color: white;
+  padding: 0.8rem;
+  
+}
+.site-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
