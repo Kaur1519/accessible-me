@@ -39,20 +39,21 @@
       </section>
       <section class="owner">
         <h2>Meet the owner</h2>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+        <ul itemscope itemtype="https://schema.org/Person">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="jobTitle">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
       </section>
-      <section class="address">
+      <section class="address" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
         <h2>Address</h2>
         <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
+          <span itemprop="name">Jambox Studios</span>
+          <span itemprop="streetAddress">123 Guitar Road,</span>
+          <span itemprop="addressLocality">Musicville</span>, 
+          <span itemprop="addressRegion">Danceistan</span>
+          <span itemprop="postalCode">B3T 0L0</span>
         </p>
       </section>
       <section class="contact-section">
@@ -72,7 +73,7 @@
     </main>
     <footer class="site-footer" role="contentinfo">
       <p>&copy; 2021 Jam Box Studios</p>
-      <a href="#top">Back to Top</a>
+      <a href="#top" aria-label="go back to the top of the page">Back to Top</a>
     </footer>
   </div>
 </body>
