@@ -73,6 +73,9 @@ form button {
 .site-footer {
   padding: 2rem 0;
 }
+input, textarea{
+  max-width: 85%;
+}
 /* styling all links when they are in focus */
 a:focus{
   outline: 3.5px solid black;
